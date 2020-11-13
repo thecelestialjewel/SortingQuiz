@@ -18,6 +18,42 @@
       </answer>
     </answers>
   </question>
+  <question>
+    <title>Question 2</title>
+    <questiontext>What would you rather learn about?</questiontext>
+    <answers>
+      <answer house="Gryffindor">
+        <answertext>Quidditch</answertext>
+      </answer>
+      <answer house="Ravenclaw">
+        <answertext>Alchemy</answertext>
+      </answer>
+      <answer house="Hufflepuff">
+        <answertext>Transfiguration</answertext>
+      </answer>
+      <answer house="Slytherin">
+        <answertext>Potions</answertext>
+      </answer>
+    </answers>
+  </question>
+  <question>
+    <title>Question 3</title>
+    <questiontext>What color do you prefer</questiontext>
+    <answers>
+      <answer house="Gryffindor">
+        <answertext>Red</answertext>
+      </answer>
+      <answer house="Ravenclaw">
+        <answertext>Blue</answertext>
+      </answer>
+      <answer house="Hufflepuff">
+        <answertext>Yellow</answertext>
+      </answer>
+      <answer house="Slytherin">
+        <answertext>Green</answertext>
+      </answer>
+    </answers>
+  </question>
 
   
   
