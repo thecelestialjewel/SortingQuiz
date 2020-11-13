@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<questions>
+  <question>
+    <title>Question 1</title>
+    <questiontext>What is more important?</questiontext>
+    <answers>
+      <answer house="Gryffindor">
+        <answertext>Bravery</answertext>
+      </answer>
+      <answer house="Ravenclaw">
+        <answertext>Intelligence</answertext>
+      </answer>
+      <answer house="Hufflepuff">
+        <answertext>Kindness</answertext>
+      </answer>
+      <answer house="Slytherin">
+        <answertext>Achievement</answertext>
+      </answer>
+    </answers>
+  </question>
+
+  
+  
+</questions>
