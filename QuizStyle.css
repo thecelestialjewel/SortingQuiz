@@ -1,0 +1,46 @@
+﻿body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-image: url(alchemybackground.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.question {
+    border: solid;
+    border-radius: 25px;
+    border-style: solid;
+    width: 60%;
+    background-color: rgba(0, 0, 0, .8);
+    color: mediumpurple;
+    margin: 0 0 15px 20%;
+}
+
+.title {
+    margin: 0 0 15px 0;
+    padding: 10px 2px 2px 10px;
+    border-bottom: dotted;
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(38, 12, 12, 1);
+    color: rgba(200, 187, 8, 0.7);
+    font-weight: bolder;
+}
+
+.question-text {
+    margin: 0 0 15px 0;
+    padding: 2px 2px 2px 10px;
+}
+
+.answers {
+    margin: 0 0 5px 5px;
+}
+
+.answer-item {
+    display: block;
+}
+
+    .answer-item:hover {
+        cursor: pointer;
+    }
