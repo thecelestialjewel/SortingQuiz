@@ -348,3 +348,7 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+.vs/HarryPotter/v16/.suo
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/SortingQuiz/v16/.suo
