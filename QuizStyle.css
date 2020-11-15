@@ -44,3 +44,8 @@
     .answer-item:hover {
         cursor: pointer;
     }
+
+/*.buttonContainer{
+    width: 100%;
+    padding-left: 30% !important;
+}*/

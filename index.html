@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Hogwarts Sorting Quiz</title>
     <link href="QuizStyle.css" rel="stylesheet" type="text/css" />
+    <link href="glowButton.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -25,7 +26,9 @@
 
     <form onsubmit="return calculateHouse();">
         <div id="questions"></div>
-        <button type="submit">Click me!</button>
+        <div style="width:100%; padding-left: 30%;padding-right: 30%;">
+            <button class="glow-on-hover" type="submit">Test Results!</button>
+        </div>
     </form>
 
 
