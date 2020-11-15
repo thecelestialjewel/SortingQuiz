@@ -181,24 +181,6 @@
     </answers>
   </question>
   <question>
-    <title>Question 10</title>
-    <questiontext>Which of these would be your perfect way to spend the day?</questiontext>
-    <answers>
-      <answer house="Gryffindor">
-        <answertext>Go on an adventure</answertext>
-      </answer>
-      <answer house="Ravenclaw">
-        <answertext>Read</answertext>
-      </answer>
-      <answer house="Hufflepuff">
-        <answertext>Spend time with friends and family</answertext>
-      </answer>
-      <answer house="Slytherin">
-        <answertext>Shop, maybe a bit of harmless banter</answertext>
-      </answer>
-    </answers>
-  </question>
-  <question>
     <title>Question 11</title>
     <questiontext>Someone steals money from you. They're poor and really need it. What do you do?</questiontext>
     <answers>

@@ -29,7 +29,6 @@
     </form>
 
 
-    <script src="script.js"></script>
     <!--https://www.w3schools.com/xml/tryit.asp?filename=try_dom_xmlhttprequest_responsexml-->
     <script type="text/javascript">
         function loadQuestions() {
@@ -75,7 +74,56 @@
         loadQuestions();
 
         function calculateHouse() {
-            alert('Sorting area triggered!');
+
+            var gryffindorScore = 0;
+            var ravenclawScore = 0;
+            var hufflepuffScore = 0;
+            var slytherinScore = 0;
+
+            //loop to get 20 question answers 
+            for (var i = 0; i < 20; i++){
+                var rbAnswers = document.getElementsByName('Question' + (i + 1)); //radiobutton answers
+
+                for (var j = 0; j < rbAnswers.length; j++) {
+                    if (rbAnswers[j].checked) {
+                        switch (rbAnswers[j].value) {
+                            case 'Gryffindor':
+                                gryffindorScore++;
+                                break;
+                            case 'Ravenclaw':
+                                ravenclawScore++;
+                                break;
+                            case 'Hufflepuff':
+                                hufflepuffScore++;
+                                break;
+                            case 'Slytherin':
+                                slytherinScore++;
+                                break;
+                            default:
+                                alert('Undeclared House!');
+                        }
+                    }
+                }
+            }
+            //creating dictionary variable
+            var results = {};
+            results['Gryffindor'] = gryffindorScore; //results[key]
+            results['Ravenclaw'] = ravenclawScore;
+            results['Hufflepuff'] = hufflepuffScore;
+            results['Slytherin'] = slytherinScore;
+
+            var selectedHouse = '';
+            var highestScore = 0;
+            for (var key in results) {
+                var score = results[key];
+                if (highestScore < score) {
+                    highestScore = score;
+                    selectedHouse = key;
+                }
+            }
+            alert(selectedHouse);
+
+
             return false;
         }
 
