@@ -87,20 +87,25 @@
             for (var i = 0; i < 20; i++){
                 var rbAnswers = document.getElementsByName('Question' + (i + 1)); //radiobutton answers
 
+                var isAnswerSelected = false;
                 for (var j = 0; j < rbAnswers.length; j++) {
                     if (rbAnswers[j].checked) {
                         switch (rbAnswers[j].value) {
                             case 'Gryffindor':
                                 gryffindorScore++;
+                                isAnswerSelected = true;
                                 break;
                             case 'Ravenclaw':
                                 ravenclawScore++;
+                                isAnswerSelected = true;
                                 break;
                             case 'Hufflepuff':
                                 hufflepuffScore++;
+                                isAnswerSelected = true;
                                 break;
                             case 'Slytherin':
                                 slytherinScore++;
+                                isAnswerSelected = true;
                                 break;
                             default:
                                 alert('Undeclared House!');
@@ -108,9 +113,12 @@
 
                         break;
                     }
+                }
+                if (isAnswerSelected == false) {
                     alert('Please answer question ' + (i + 1)); //making sure answer is selected
                     return false;
                 }
+                
             }
             //creating dictionary variable
             var results = {};
