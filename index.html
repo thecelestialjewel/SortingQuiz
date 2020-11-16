@@ -1,4 +1,8 @@
 ﻿<!DOCTYPE html>
+<!--
+    Christine Jordan & Kelcee Chorba
+    Week 8 Team Project: Sorting Quiz
+-->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,6 +10,7 @@
     <title>Hogwarts Sorting Quiz</title>
     <link href="QuizStyle.css" rel="stylesheet" type="text/css" />
     <link href="glowButton.css" rel="stylesheet" type="text/css"/>
+    <link href="wizardhat.ico" rel="icon" type="image/x-icon"/>
 </head>
 <body>
 
@@ -51,7 +56,7 @@
 
                     var header = xml.getElementsByTagName('header')[0]; //retrieving header from updated NODE INSERT
 
-
+                    loop(xml);
 
                     var html = '';
 
@@ -157,6 +162,26 @@
             return false;
         }
 
+        //FILTER BY NODE TYPE-5pts
+        function loop(node) {
+            var nodes = node.childNodes; //will loop through children
+            for (var i = 0; i < nodes.length; i++) {
+                if (!nodes[i]) { //if no node here, keep looping
+                    continue;
+                }
+
+                if (nodes[i].nodeType == 1) {
+                    console.log('Node Name: ' + nodes[i].nodeName + ' Node Type: ' + nodes[i].nodeType + ' Node Value: ' + nodes[i].nodeValue);
+
+                }
+                
+                
+                if (nodes[i].childNodes.length > 0) { //if this node also has children
+                    loop(nodes[i]); //recurse into function again
+                }
+
+            }
+        }
     </script>
 </body>
 </html>
