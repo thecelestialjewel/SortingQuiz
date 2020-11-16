@@ -45,7 +45,13 @@
         cursor: pointer;
     }
 
-/*.buttonContainer{
-    width: 100%;
-    padding-left: 30% !important;
-}*/
+.header{
+    width:100%;
+}
+
+.headertext {
+    font-size: 44px;
+    color: goldenrod;
+    padding: 0 0 0 36%;
+    font-family: Impact, Charcoal, sans-serif;
+}
