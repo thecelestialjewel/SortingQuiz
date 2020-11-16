@@ -3,8 +3,9 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
+    /*BACKGROUND IMAGE REF: https://images.theconversation.com/files/253693/original/file-20190114-43541-1b0ad88.jpg?ixlib=rb-1.1.0&rect=23%2C730%2C3952%2C1976&q=45&auto=format&w=1356&h=668&fit=crop*/
     background-image: url(alchemybackground.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
