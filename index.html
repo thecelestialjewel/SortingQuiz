@@ -61,7 +61,8 @@
 
                     var html = '';
 
-                    html += '<div class="header"><span class="headertext">' + header.textContent + '</span></div>'; //USE INSERTED NODE TO CREATE HEADER
+                     //USE INSERTED NODE TO CREATE HEADER
+                    html += '<div class="header"><span class="headertext">' + header.textContent + '</span></div>';
 
                     var questions = xml.getElementsByTagName('question');
                     for (var i = 0; i < questions.length; i++) {
@@ -97,6 +98,7 @@
 
         loadQuestions();
 
+        //calculating house score
         function calculateHouse() {
 
             var gryffindorScore = 0;
@@ -158,12 +160,27 @@
                 }
             }
             alert(selectedHouse);
+            switch (selectedHouse) {
+                case 'Gryffindor':
+                    window.location.replace('gryffindor.png');
+                    break;
+                case 'Ravenclaw':
+                    window.location = 'www.aol.com';
+                    break;
+                case 'Hufflepuff':
+                    window.location.replace('hufflepuff.jpg');
+                    break;
+                case 'Slytherin':
+                    window.location.href = 'www.msn.com';
+                    break;
+                default:
+            }
 
 
             return false;
         }
 
-        //FILTER BY NODE TYPE-5pts
+        //FILTER BY NODE TYPE, OUTPUT TO CONSOLE
         function loop(node) {
             var nodes = node.childNodes; //will loop through children
             for (var i = 0; i < nodes.length; i++) {
